@@ -283,11 +283,12 @@ p.header{
     border-radius:12px;
     font-size:1rem;
     outline:none;
-    color: var(--primary-bg-color);
+    color: black;
 }
 
-.feedback-box textarea:focus{
-    box-shadow:0 0 0 3px rgba(253,126,20,.45);
+.feedback-box textarea::placeholder {
+    color: black;
+    opacity: 1;
 }
 
 .feedback-box button{
@@ -416,8 +417,15 @@ footer{
 
     #menu-toggle:checked ~ .nav-links{
         display:flex;
+        flex-direction:row;
+        justify-content:center;
     }
 
+    .hero{
+        min-height:100vh;
+        height:auto;
+    }
+    
     .hero-content{
         text-align:center;
         align-items:center;
